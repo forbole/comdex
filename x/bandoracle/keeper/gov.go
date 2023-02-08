@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/comdex-official/comdex/x/bandoracle/types"
+	"github.com/comdex-official/comdex/v8/x/bandoracle/types"
 )
 
 func (k Keeper) HandleProposalFetchPrice(ctx sdk.Context, p *types.FetchPriceProposal) error {

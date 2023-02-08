@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/comdex-official/comdex/x/esm/types"
+	"github.com/comdex-official/comdex/v8/x/esm/types"
 )
 
 // NewMsgServerImpl returns an implementation of the MsgServer interface

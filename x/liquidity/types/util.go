@@ -9,8 +9,8 @@ import (
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	"github.com/tendermint/tendermint/crypto"
 
-	"github.com/comdex-official/comdex/x/liquidity/amm"
-	"github.com/comdex-official/comdex/x/liquidity/expected"
+	"github.com/comdex-official/comdex/v8/x/liquidity/amm"
+	"github.com/comdex-official/comdex/v8/x/liquidity/expected"
 )
 
 type sendCoinsTxKey struct {

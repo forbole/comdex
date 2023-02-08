@@ -1,13 +1,13 @@
 package expected
 
 import (
-	"github.com/comdex-official/comdex/x/liquidation/types"
+	"github.com/comdex-official/comdex/v8/x/liquidation/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	assettypes "github.com/comdex-official/comdex/x/asset/types"
-	esmtypes "github.com/comdex-official/comdex/x/esm/types"
-	markettypes "github.com/comdex-official/comdex/x/market/types"
+	assettypes "github.com/comdex-official/comdex/v8/x/asset/types"
+	esmtypes "github.com/comdex-official/comdex/v8/x/esm/types"
+	markettypes "github.com/comdex-official/comdex/v8/x/market/types"
 )
 
 type BankKeeper interface {

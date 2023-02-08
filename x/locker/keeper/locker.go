@@ -4,9 +4,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	protobuftypes "github.com/gogo/protobuf/types"
 
-	esmtypes "github.com/comdex-official/comdex/x/esm/types"
+	esmtypes "github.com/comdex-official/comdex/v8/x/esm/types"
 
-	"github.com/comdex-official/comdex/x/locker/types"
+	"github.com/comdex-official/comdex/v8/x/locker/types"
 )
 
 // get locker lookup table.

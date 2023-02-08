@@ -6,8 +6,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/comdex-official/comdex/x/esm/keeper"
-	"github.com/comdex-official/comdex/x/esm/types"
+	"github.com/comdex-official/comdex/v8/x/esm/keeper"
+	"github.com/comdex-official/comdex/v8/x/esm/types"
 )
 
 func NewHandler(k keeper.Keeper) sdk.Handler {

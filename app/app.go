@@ -97,9 +97,9 @@ import (
 	ibchost "github.com/cosmos/ibc-go/v4/modules/core/24-host"
 	ibckeeper "github.com/cosmos/ibc-go/v4/modules/core/keeper"
 
-	"github.com/comdex-official/comdex/x/liquidation"
-	liquidationkeeper "github.com/comdex-official/comdex/x/liquidation/keeper"
-	liquidationtypes "github.com/comdex-official/comdex/x/liquidation/types"
+	"github.com/comdex-official/comdex/v8/x/liquidation"
+	liquidationkeeper "github.com/comdex-official/comdex/v8/x/liquidation/keeper"
+	liquidationtypes "github.com/comdex-official/comdex/v8/x/liquidation/types"
 
 	abcitypes "github.com/tendermint/tendermint/abci/types"
 	tmjson "github.com/tendermint/tendermint/libs/json"
@@ -108,48 +108,48 @@ import (
 	tmprototypes "github.com/tendermint/tendermint/proto/tendermint/types"
 	tmdb "github.com/tendermint/tm-db"
 
-	"github.com/comdex-official/comdex/x/asset"
-	assetclient "github.com/comdex-official/comdex/x/asset/client"
-	assetkeeper "github.com/comdex-official/comdex/x/asset/keeper"
-	assettypes "github.com/comdex-official/comdex/x/asset/types"
-	"github.com/comdex-official/comdex/x/auction"
-	auctionkeeper "github.com/comdex-official/comdex/x/auction/keeper"
-	auctiontypes "github.com/comdex-official/comdex/x/auction/types"
-	"github.com/comdex-official/comdex/x/collector"
-	collectorkeeper "github.com/comdex-official/comdex/x/collector/keeper"
-	collectortypes "github.com/comdex-official/comdex/x/collector/types"
-	"github.com/comdex-official/comdex/x/esm"
-	esmkeeper "github.com/comdex-official/comdex/x/esm/keeper"
-	esmtypes "github.com/comdex-official/comdex/x/esm/types"
+	"github.com/comdex-official/comdex/v8/x/asset"
+	assetclient "github.com/comdex-official/comdex/v8/x/asset/client"
+	assetkeeper "github.com/comdex-official/comdex/v8/x/asset/keeper"
+	assettypes "github.com/comdex-official/comdex/v8/x/asset/types"
+	"github.com/comdex-official/comdex/v8/x/auction"
+	auctionkeeper "github.com/comdex-official/comdex/v8/x/auction/keeper"
+	auctiontypes "github.com/comdex-official/comdex/v8/x/auction/types"
+	"github.com/comdex-official/comdex/v8/x/collector"
+	collectorkeeper "github.com/comdex-official/comdex/v8/x/collector/keeper"
+	collectortypes "github.com/comdex-official/comdex/v8/x/collector/types"
+	"github.com/comdex-official/comdex/v8/x/esm"
+	esmkeeper "github.com/comdex-official/comdex/v8/x/esm/keeper"
+	esmtypes "github.com/comdex-official/comdex/v8/x/esm/types"
 
-	"github.com/comdex-official/comdex/x/lend"
-	lendclient "github.com/comdex-official/comdex/x/lend/client"
-	lendkeeper "github.com/comdex-official/comdex/x/lend/keeper"
-	lendtypes "github.com/comdex-official/comdex/x/lend/types"
-	"github.com/comdex-official/comdex/x/locker"
-	lockerkeeper "github.com/comdex-official/comdex/x/locker/keeper"
-	lockertypes "github.com/comdex-official/comdex/x/locker/types"
+	"github.com/comdex-official/comdex/v8/x/lend"
+	lendclient "github.com/comdex-official/comdex/v8/x/lend/client"
+	lendkeeper "github.com/comdex-official/comdex/v8/x/lend/keeper"
+	lendtypes "github.com/comdex-official/comdex/v8/x/lend/types"
+	"github.com/comdex-official/comdex/v8/x/locker"
+	lockerkeeper "github.com/comdex-official/comdex/v8/x/locker/keeper"
+	lockertypes "github.com/comdex-official/comdex/v8/x/locker/types"
 
-	bandoraclemodule "github.com/comdex-official/comdex/x/bandoracle"
-	bandoraclemoduleclient "github.com/comdex-official/comdex/x/bandoracle/client"
-	bandoraclemodulekeeper "github.com/comdex-official/comdex/x/bandoracle/keeper"
-	bandoraclemoduletypes "github.com/comdex-official/comdex/x/bandoracle/types"
+	bandoraclemodule "github.com/comdex-official/comdex/v8/x/bandoracle"
+	bandoraclemoduleclient "github.com/comdex-official/comdex/v8/x/bandoracle/client"
+	bandoraclemodulekeeper "github.com/comdex-official/comdex/v8/x/bandoracle/keeper"
+	bandoraclemoduletypes "github.com/comdex-official/comdex/v8/x/bandoracle/types"
 
-	"github.com/comdex-official/comdex/x/market"
-	marketkeeper "github.com/comdex-official/comdex/x/market/keeper"
-	markettypes "github.com/comdex-official/comdex/x/market/types"
+	"github.com/comdex-official/comdex/v8/x/market"
+	marketkeeper "github.com/comdex-official/comdex/v8/x/market/keeper"
+	markettypes "github.com/comdex-official/comdex/v8/x/market/types"
 
-	"github.com/comdex-official/comdex/x/rewards"
-	rewardskeeper "github.com/comdex-official/comdex/x/rewards/keeper"
-	rewardstypes "github.com/comdex-official/comdex/x/rewards/types"
+	"github.com/comdex-official/comdex/v8/x/rewards"
+	rewardskeeper "github.com/comdex-official/comdex/v8/x/rewards/keeper"
+	rewardstypes "github.com/comdex-official/comdex/v8/x/rewards/types"
 
-	"github.com/comdex-official/comdex/x/tokenmint"
-	tokenmintkeeper "github.com/comdex-official/comdex/x/tokenmint/keeper"
-	tokenminttypes "github.com/comdex-official/comdex/x/tokenmint/types"
+	"github.com/comdex-official/comdex/v8/x/tokenmint"
+	tokenmintkeeper "github.com/comdex-official/comdex/v8/x/tokenmint/keeper"
+	tokenminttypes "github.com/comdex-official/comdex/v8/x/tokenmint/types"
 
-	"github.com/comdex-official/comdex/x/vault"
-	vaultkeeper "github.com/comdex-official/comdex/x/vault/keeper"
-	vaulttypes "github.com/comdex-official/comdex/x/vault/types"
+	"github.com/comdex-official/comdex/v8/x/vault"
+	vaultkeeper "github.com/comdex-official/comdex/v8/x/vault/keeper"
+	vaulttypes "github.com/comdex-official/comdex/v8/x/vault/types"
 
 	"github.com/CosmWasm/wasmd/x/wasm"
 	wasmtypes "github.com/CosmWasm/wasmd/x/wasm/types"
@@ -158,17 +158,17 @@ import (
 	authzkeeper "github.com/cosmos/cosmos-sdk/x/authz/keeper"
 	authzmodule "github.com/cosmos/cosmos-sdk/x/authz/module"
 
-	"github.com/comdex-official/comdex/x/liquidity"
-	liquidityclient "github.com/comdex-official/comdex/x/liquidity/client"
-	liquiditykeeper "github.com/comdex-official/comdex/x/liquidity/keeper"
-	liquiditytypes "github.com/comdex-official/comdex/x/liquidity/types"
+	"github.com/comdex-official/comdex/v8/x/liquidity"
+	liquidityclient "github.com/comdex-official/comdex/v8/x/liquidity/client"
+	liquiditykeeper "github.com/comdex-official/comdex/v8/x/liquidity/keeper"
+	liquiditytypes "github.com/comdex-official/comdex/v8/x/liquidity/types"
 
-	cwasm "github.com/comdex-official/comdex/app/wasm"
+	cwasm "github.com/comdex-official/comdex/v8/app/wasm"
 
-	mv5 "github.com/comdex-official/comdex/app/upgrades/mainnet/v5"
-	mv6 "github.com/comdex-official/comdex/app/upgrades/mainnet/v6"
-	mv7 "github.com/comdex-official/comdex/app/upgrades/mainnet/v7"
-	mv8 "github.com/comdex-official/comdex/app/upgrades/mainnet/v8"
+	mv5 "github.com/comdex-official/comdex/v8/app/upgrades/mainnet/v5"
+	mv6 "github.com/comdex-official/comdex/v8/app/upgrades/mainnet/v6"
+	mv7 "github.com/comdex-official/comdex/v8/app/upgrades/mainnet/v7"
+	mv8 "github.com/comdex-official/comdex/v8/app/upgrades/mainnet/v8"
 )
 
 const (
@@ -1271,7 +1271,7 @@ func upgradeHandlers(upgradeInfo storetypes.UpgradeInfo, a *App, storeUpgrades *
 
 	case upgradeInfo.Name == mv8.UpgradeName810 && !a.UpgradeKeeper.IsSkipHeight(upgradeInfo.Height):
 		storeUpgrades = &storetypes.StoreUpgrades{}
-	
+
 	case upgradeInfo.Name == mv8.UpgradeName811 && !a.UpgradeKeeper.IsSkipHeight(upgradeInfo.Height):
 		storeUpgrades = &storetypes.StoreUpgrades{}
 	}

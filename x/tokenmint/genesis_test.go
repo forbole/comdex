@@ -1,12 +1,12 @@
 package tokenmint_test
 
 import (
-	"github.com/comdex-official/comdex/app"
-	"github.com/comdex-official/comdex/x/tokenmint"
+	"github.com/comdex-official/comdex/v8/app"
+	"github.com/comdex-official/comdex/v8/x/tokenmint"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	"testing"
 
-	"github.com/comdex-official/comdex/x/tokenmint/types"
+	"github.com/comdex-official/comdex/v8/x/tokenmint/types"
 	"github.com/stretchr/testify/require"
 )
 

@@ -1,4 +1,4 @@
-module github.com/comdex-official/comdex
+module github.com/comdex-official/comdex/v8
 
 go 1.19
 

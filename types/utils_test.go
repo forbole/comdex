@@ -9,7 +9,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/comdex-official/comdex/types"
+	"github.com/comdex-official/comdex/v8/types"
 )
 
 func TestGetShareValue(t *testing.T) {

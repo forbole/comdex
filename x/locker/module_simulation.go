@@ -10,9 +10,9 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	"github.com/comdex-official/comdex/testutil/sample"
-	lockersimulation "github.com/comdex-official/comdex/x/locker/simulation"
-	"github.com/comdex-official/comdex/x/locker/types"
+	"github.com/comdex-official/comdex/v8/testutil/sample"
+	lockersimulation "github.com/comdex-official/comdex/v8/x/locker/simulation"
+	"github.com/comdex-official/comdex/v8/x/locker/types"
 )
 
 // avoid unused import issue.

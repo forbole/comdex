@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"github.com/comdex-official/comdex/x/bandoracle/types"
+	"github.com/comdex-official/comdex/v8/x/bandoracle/types"
 	"github.com/stretchr/testify/require"
 )
 

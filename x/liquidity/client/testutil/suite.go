@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	chain "github.com/comdex-official/comdex/app"
-	liquidityKeeper "github.com/comdex-official/comdex/x/liquidity/keeper"
-	"github.com/comdex-official/comdex/x/liquidity/types"
+	chain "github.com/comdex-official/comdex/v8/app"
+	liquidityKeeper "github.com/comdex-official/comdex/v8/x/liquidity/keeper"
+	"github.com/comdex-official/comdex/v8/x/liquidity/types"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	servertypes "github.com/cosmos/cosmos-sdk/server/types"

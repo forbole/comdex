@@ -6,7 +6,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/comdex-official/comdex/x/liquidity/types"
+	"github.com/comdex-official/comdex/v8/x/liquidity/types"
 )
 
 // getNextPairIdWithUpdate increments pair id by one and set it.

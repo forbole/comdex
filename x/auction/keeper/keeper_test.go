@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	lendkeeper "github.com/comdex-official/comdex/x/lend/keeper"
+	lendkeeper "github.com/comdex-official/comdex/v8/x/lend/keeper"
 	"testing"
 	"time"
 
@@ -10,17 +10,17 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/comdex-official/comdex/app"
-	assetKeeper "github.com/comdex-official/comdex/x/asset/keeper"
-	"github.com/comdex-official/comdex/x/auction/keeper"
-	"github.com/comdex-official/comdex/x/auction/types"
-	collectKeeper "github.com/comdex-official/comdex/x/collector/keeper"
-	liquidationKeeper "github.com/comdex-official/comdex/x/liquidation/keeper"
-	liquidationTypes "github.com/comdex-official/comdex/x/liquidation/types"
-	marketKeeper "github.com/comdex-official/comdex/x/market/keeper"
-	tokenmintKeeper "github.com/comdex-official/comdex/x/tokenmint/keeper"
-	vaultKeeper "github.com/comdex-official/comdex/x/vault/keeper"
-	vaultTypes "github.com/comdex-official/comdex/x/vault/types"
+	chain "github.com/comdex-official/comdex/v8/app"
+	assetKeeper "github.com/comdex-official/comdex/v8/x/asset/keeper"
+	"github.com/comdex-official/comdex/v8/x/auction/keeper"
+	"github.com/comdex-official/comdex/v8/x/auction/types"
+	collectKeeper "github.com/comdex-official/comdex/v8/x/collector/keeper"
+	liquidationKeeper "github.com/comdex-official/comdex/v8/x/liquidation/keeper"
+	liquidationTypes "github.com/comdex-official/comdex/v8/x/liquidation/types"
+	marketKeeper "github.com/comdex-official/comdex/v8/x/market/keeper"
+	tokenmintKeeper "github.com/comdex-official/comdex/v8/x/tokenmint/keeper"
+	vaultKeeper "github.com/comdex-official/comdex/v8/x/vault/keeper"
+	vaultTypes "github.com/comdex-official/comdex/v8/x/vault/types"
 )
 
 type KeeperTestSuite struct {

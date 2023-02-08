@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/comdex-official/comdex/x/collector/types"
+	"github.com/comdex-official/comdex/v8/x/collector/types"
 )
 
 type msgServer struct {

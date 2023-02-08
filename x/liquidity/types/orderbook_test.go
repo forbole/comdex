@@ -6,9 +6,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	utils "github.com/comdex-official/comdex/types"
-	"github.com/comdex-official/comdex/x/liquidity/amm"
-	"github.com/comdex-official/comdex/x/liquidity/types"
+	utils "github.com/comdex-official/comdex/v8/types"
+	"github.com/comdex-official/comdex/v8/x/liquidity/amm"
+	"github.com/comdex-official/comdex/v8/x/liquidity/types"
 )
 
 func newOrder(dir amm.OrderDirection, price sdk.Dec, amt sdk.Int) amm.Order {

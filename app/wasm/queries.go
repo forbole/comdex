@@ -3,16 +3,16 @@ package wasm
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	assetKeeper "github.com/comdex-official/comdex/x/asset/keeper"
-	collectorkeeper "github.com/comdex-official/comdex/x/collector/keeper"
-	esmKeeper "github.com/comdex-official/comdex/x/esm/keeper"
-	lendKeeper "github.com/comdex-official/comdex/x/lend/keeper"
-	liquidationKeeper "github.com/comdex-official/comdex/x/liquidation/keeper"
-	liquidityKeeper "github.com/comdex-official/comdex/x/liquidity/keeper"
-	lockerkeeper "github.com/comdex-official/comdex/x/locker/keeper"
-	rewardsKeeper "github.com/comdex-official/comdex/x/rewards/keeper"
-	tokenMintKeeper "github.com/comdex-official/comdex/x/tokenmint/keeper"
-	vaultKeeper "github.com/comdex-official/comdex/x/vault/keeper"
+	assetKeeper "github.com/comdex-official/comdex/v8/x/asset/keeper"
+	collectorkeeper "github.com/comdex-official/comdex/v8/x/collector/keeper"
+	esmKeeper "github.com/comdex-official/comdex/v8/x/esm/keeper"
+	lendKeeper "github.com/comdex-official/comdex/v8/x/lend/keeper"
+	liquidationKeeper "github.com/comdex-official/comdex/v8/x/liquidation/keeper"
+	liquidityKeeper "github.com/comdex-official/comdex/v8/x/liquidity/keeper"
+	lockerkeeper "github.com/comdex-official/comdex/v8/x/locker/keeper"
+	rewardsKeeper "github.com/comdex-official/comdex/v8/x/rewards/keeper"
+	tokenMintKeeper "github.com/comdex-official/comdex/v8/x/tokenmint/keeper"
+	vaultKeeper "github.com/comdex-official/comdex/v8/x/vault/keeper"
 )
 
 type QueryPlugin struct {

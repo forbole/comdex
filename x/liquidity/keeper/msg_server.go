@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/comdex-official/comdex/x/liquidity/types"
+	"github.com/comdex-official/comdex/v8/x/liquidity/types"
 )
 
 type msgServer struct {

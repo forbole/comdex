@@ -9,10 +9,10 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	chain "github.com/comdex-official/comdex/app"
-	assettypes "github.com/comdex-official/comdex/x/asset/types"
-	markettypes "github.com/comdex-official/comdex/x/market/types"
-	"github.com/comdex-official/comdex/x/tokenmint/keeper"
+	chain "github.com/comdex-official/comdex/v8/app"
+	assettypes "github.com/comdex-official/comdex/v8/x/asset/types"
+	markettypes "github.com/comdex-official/comdex/v8/x/market/types"
+	"github.com/comdex-official/comdex/v8/x/tokenmint/keeper"
 )
 
 type ModuleTestSuite struct {

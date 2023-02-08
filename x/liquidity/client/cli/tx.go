@@ -15,7 +15,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/gov/client/cli"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 
-	"github.com/comdex-official/comdex/x/liquidity/types"
+	"github.com/comdex-official/comdex/v8/x/liquidity/types"
 )
 
 // GetTxCmd returns the transaction commands for the module.

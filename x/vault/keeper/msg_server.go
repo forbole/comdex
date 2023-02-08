@@ -7,11 +7,11 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/comdex-official/comdex/app/wasm/bindings"
-	collectortypes "github.com/comdex-official/comdex/x/collector/types"
-	esmtypes "github.com/comdex-official/comdex/x/esm/types"
-	rewardstypes "github.com/comdex-official/comdex/x/rewards/types"
-	"github.com/comdex-official/comdex/x/vault/types"
+	"github.com/comdex-official/comdex/v8/app/wasm/bindings"
+	collectortypes "github.com/comdex-official/comdex/v8/x/collector/types"
+	esmtypes "github.com/comdex-official/comdex/v8/x/esm/types"
+	rewardstypes "github.com/comdex-official/comdex/v8/x/rewards/types"
+	"github.com/comdex-official/comdex/v8/x/vault/types"
 )
 
 var _ types.MsgServer = msgServer{}

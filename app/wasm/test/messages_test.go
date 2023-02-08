@@ -3,8 +3,8 @@ package wasm
 import (
 	"testing"
 
-	"github.com/comdex-official/comdex/app/wasm"
-	"github.com/comdex-official/comdex/app/wasm/bindings"
+	"github.com/comdex-official/comdex/v8/app/wasm"
+	"github.com/comdex-official/comdex/v8/app/wasm/bindings"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 )

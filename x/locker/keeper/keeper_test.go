@@ -1,21 +1,21 @@
 package keeper_test
 
 import (
-	rewardsKeeper "github.com/comdex-official/comdex/x/rewards/keeper"
+	rewardsKeeper "github.com/comdex-official/comdex/v8/x/rewards/keeper"
 	"testing"
 	"time"
 
-	collectorKeeper "github.com/comdex-official/comdex/x/collector/keeper"
+	collectorKeeper "github.com/comdex-official/comdex/v8/x/collector/keeper"
 
 	"github.com/stretchr/testify/suite"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/comdex-official/comdex/app"
-	assetKeeper "github.com/comdex-official/comdex/x/asset/keeper"
-	lockerKeeper "github.com/comdex-official/comdex/x/locker/keeper"
-	lockerTypes "github.com/comdex-official/comdex/x/locker/types"
+	chain "github.com/comdex-official/comdex/v8/app"
+	assetKeeper "github.com/comdex-official/comdex/v8/x/asset/keeper"
+	lockerKeeper "github.com/comdex-official/comdex/v8/x/locker/keeper"
+	lockerTypes "github.com/comdex-official/comdex/v8/x/locker/types"
 )
 
 type KeeperTestSuite struct {

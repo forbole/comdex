@@ -11,11 +11,11 @@ import (
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/comdex-official/comdex/app/wasm/bindings"
-	assettypes "github.com/comdex-official/comdex/x/asset/types"
-	markettypes "github.com/comdex-official/comdex/x/market/types"
-	"github.com/comdex-official/comdex/x/vault/client/cli"
-	"github.com/comdex-official/comdex/x/vault/types"
+	"github.com/comdex-official/comdex/v8/app/wasm/bindings"
+	assettypes "github.com/comdex-official/comdex/v8/x/asset/types"
+	markettypes "github.com/comdex-official/comdex/v8/x/market/types"
+	"github.com/comdex-official/comdex/v8/x/vault/client/cli"
+	"github.com/comdex-official/comdex/v8/x/vault/types"
 )
 
 var commonArgs = []string{

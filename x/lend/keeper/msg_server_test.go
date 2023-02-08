@@ -2,11 +2,11 @@ package keeper_test
 
 import (
 	"fmt"
-	utils "github.com/comdex-official/comdex/types"
+	utils "github.com/comdex-official/comdex/v8/types"
 	"github.com/pkg/errors"
 	"time"
 
-	"github.com/comdex-official/comdex/x/lend/types"
+	"github.com/comdex-official/comdex/v8/x/lend/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 )

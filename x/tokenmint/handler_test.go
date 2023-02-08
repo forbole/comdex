@@ -1,10 +1,10 @@
 package tokenmint_test
 
 import (
-	"github.com/comdex-official/comdex/app"
-	"github.com/comdex-official/comdex/x/tokenmint"
-	"github.com/comdex-official/comdex/x/tokenmint/keeper"
-	"github.com/comdex-official/comdex/x/tokenmint/types"
+	"github.com/comdex-official/comdex/v8/app"
+	"github.com/comdex-official/comdex/v8/x/tokenmint"
+	"github.com/comdex-official/comdex/v8/x/tokenmint/keeper"
+	"github.com/comdex-official/comdex/v8/x/tokenmint/types"
 	"github.com/cosmos/cosmos-sdk/testutil/testdata"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"

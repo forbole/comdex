@@ -2,7 +2,7 @@ package keeper
 
 import (
 	"fmt"
-	rewardtypes "github.com/comdex-official/comdex/x/rewards/types"
+	rewardtypes "github.com/comdex-official/comdex/v8/x/rewards/types"
 	"math"
 	"testing"
 

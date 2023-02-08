@@ -6,8 +6,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	utils "github.com/comdex-official/comdex/types"
-	"github.com/comdex-official/comdex/x/liquidity/amm"
+	utils "github.com/comdex-official/comdex/v8/types"
+	"github.com/comdex-official/comdex/v8/x/liquidity/amm"
 )
 
 func TestMatchableAmount(t *testing.T) {

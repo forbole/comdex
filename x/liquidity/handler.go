@@ -6,8 +6,8 @@ import (
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 	"github.com/pkg/errors"
 
-	"github.com/comdex-official/comdex/x/liquidity/keeper"
-	"github.com/comdex-official/comdex/x/liquidity/types"
+	"github.com/comdex-official/comdex/v8/x/liquidity/keeper"
+	"github.com/comdex-official/comdex/v8/x/liquidity/types"
 )
 
 // NewHandler returns a new msg handler.

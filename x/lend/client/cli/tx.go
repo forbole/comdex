@@ -14,7 +14,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 
-	"github.com/comdex-official/comdex/x/lend/types"
+	"github.com/comdex-official/comdex/v8/x/lend/types"
 )
 
 // GetTxCmd returns the transaction commands for this module.

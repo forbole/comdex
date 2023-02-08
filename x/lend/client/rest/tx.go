@@ -8,7 +8,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/rest"
 	govrest "github.com/cosmos/cosmos-sdk/x/gov/client/rest"
 
-	"github.com/comdex-official/comdex/x/asset/types"
+	"github.com/comdex-official/comdex/v8/x/asset/types"
 )
 
 type AddNewAssetsRequest struct {

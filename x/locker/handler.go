@@ -4,8 +4,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/comdex-official/comdex/x/locker/keeper"
-	"github.com/comdex-official/comdex/x/locker/types"
+	"github.com/comdex-official/comdex/v8/x/locker/keeper"
+	"github.com/comdex-official/comdex/v8/x/locker/types"
 )
 
 // NewHandler ...
